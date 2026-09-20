@@ -154,7 +154,6 @@ FlashAttention-3 是 Hopper 专属，Ada（RTX40 系）需用 FA2 / SDPA / FlexA
 
 ## License
 
-Apache-2.0（见 `LICENSE`）。许可证文本请用 GitHub 的模板或官方源生成，不要手抄：
 
 ```bash
 curl -o LICENSE https://www.apache.org/licenses/LICENSE-2.0.txt
