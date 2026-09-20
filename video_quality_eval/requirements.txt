@@ -1,0 +1,16 @@
+# 评测工具的基础依赖（与 Wan2.1 环境基本重合）
+numpy>=1.24
+opencv-python>=4.8
+pandas>=1.5
+scipy>=1.9
+matplotlib>=3.6
+
+# 可选：光流/深度特征相关
+# torch, torchvision            # proxy_consistency / fvd 的 R3D 特征
+# lpips                         # --with-lpips
+# open_clip_torch, timm         # proxy_consistency 的 clip / dinov2 后端
+
+# 官方 VBench（background/subject consistency、motion smoothness）
+# git clone https://github.com/Vchitect/VBench.git && pip install -e VBench
+# 官方 I3D-FVD 特征
+# pip install common_metrics_on_video_quality

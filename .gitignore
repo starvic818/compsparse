@@ -1,0 +1,67 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+*.so
+
+# ---------- 实验产出：不要进 git ----------
+_selftest/
+results/
+results_*/
+captures/
+works/
+runs/
+logs/
+*.log
+*.mp4
+*.avi
+*.mov
+*.gif
+
+# ---------- 大文件 / 权重 / 抓取张量 ----------
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npy
+*.npz
+*.bin
+Wan2.1-T2V-*/
+models_t5*.pth
+Wan2.1_VAE.pth
+hf_cache/
+
+# 但保留体积很小的示例输出（相图、对照表），它们对读者有价值
+!**/example_output/*.csv
+!**/example_output/*.png
+!**/example_output/*.md
+
+# ---------- 密钥 / 凭据（绝不能进仓库）----------
+.env
+*.pem
+*.key
+id_rsa*
+token*
+*credentials*
+*secret*
+
+# ---------- 编辑器 / 系统 ----------
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- 报告中间产物 ----------
+*.tex.bak
+*.docx#
+~$*.docx

@@ -1,0 +1,66 @@
+{
+  "experiment": "wan2.1-1.3B-480p-81f-pisa-sweep",
+  "started_ts": 1758320000.0,
+  "baseline_tag": "dense",
+  "expected": { "frames": 81, "width": 832, "height": 480, "fps": 16 },
+  "runs": [
+    {
+      "prompt_id": "p01_cyberpunk_high_motion",
+      "prompt": "A high-speed cinematic FPV drone dive down a narrow neon-lit cyberpunk alleyway ...",
+      "group": "high_motion",
+      "seed": 1868418049833005034,
+      "tag": "dense",
+      "strategy": "dense",
+      "sparsity": 0.0,
+      "video": "/workspace/Wan2.1/works/baseline_high_motion_cyberpunk.mp4",
+      "latency_s": 261.0,
+      "peak_mem_gb": 21.4
+    },
+    {
+      "prompt_id": "p01_cyberpunk_high_motion",
+      "group": "high_motion",
+      "seed": 1868418049833005034,
+      "tag": "sparse_drop_0.8",
+      "strategy": "hard_drop",
+      "sparsity": 0.8,
+      "video": "/workspace/Wan2.1/works/sparse_drop08_high_motion_cyberpunk.mp4",
+      "latency_s": 168.0,
+      "peak_mem_gb": 15.9
+    },
+    {
+      "prompt_id": "p01_cyberpunk_high_motion",
+      "group": "high_motion",
+      "seed": 1868418049833005034,
+      "tag": "pisa_1st_0.8",
+      "strategy": "order1_compensated",
+      "sparsity": 0.8,
+      "rho_mean": 0.31,
+      "video": "/workspace/Wan2.1/works/pisa1_08_high_motion_cyberpunk.mp4",
+      "latency_s": 182.0,
+      "peak_mem_gb": 16.8
+    },
+    {
+      "prompt_id": "p02_water_droplet_low_motion",
+      "prompt": "An extreme macro slow-motion shot of a single crystal-clear water droplet ...",
+      "group": "low_motion",
+      "seed": 754967531804504776,
+      "tag": "dense",
+      "strategy": "dense",
+      "sparsity": 0.0,
+      "video": "/workspace/Wan2.1/works/baseline_low_motion_water_droplet.mp4",
+      "latency_s": 260.0,
+      "peak_mem_gb": 21.4
+    },
+    {
+      "prompt_id": "p02_water_droplet_low_motion",
+      "group": "low_motion",
+      "seed": 754967531804504776,
+      "tag": "sparse_drop_0.8",
+      "strategy": "hard_drop",
+      "sparsity": 0.8,
+      "video": "/workspace/Wan2.1/works/sparse_drop08_low_motion_water_droplet.mp4",
+      "latency_s": 167.0,
+      "peak_mem_gb": 15.9
+    }
+  ]
+}
