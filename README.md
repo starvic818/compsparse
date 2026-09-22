@@ -61,7 +61,7 @@ compsparse/
 │   ├── hardware_scope_rtx40_24g.md            单卡 24GB 的实验矩阵裁剪
 │   ├── offline_todo.md                        无卡期任务清单与上卡 runbook
 │   └── REPO_SETUP.md                          建仓说明（描述 / 许可 / 可见度）
-└── LICENSE                     Apache-2.0（用 GitHub 模板或 curl 生成，见文末）
+└── LICENSE                     Apache-2.0
 ```
 
 ---
@@ -154,7 +154,8 @@ FlashAttention-3 是 Hopper 专属，Ada（RTX40 系）需用 FA2 / SDPA / FlexA
 
 ## License
 
+Apache License 2.0，全文见 [`LICENSE`](LICENSE)。
 
-```bash
-curl -o LICENSE https://www.apache.org/licenses/LICENSE-2.0.txt
-```
+你可以自由使用、修改、分发本仓库代码（包括商业用途），但需保留版权与许可声明，
+并在修改过的文件中注明变更。本仓库不提供任何担保；其中的实验结论仅代表特定硬件与软件
+版本下的测量结果，请以你自己的复现实验为准。
